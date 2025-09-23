@@ -1,11 +1,13 @@
 # Magic: The Gathering Price Data Analysis
-This project explores current prices for Magic: The Gathering by gathering average card prices per card ID from retail providers like TCGPlayer, CardKingdom, and CardSphere. Hasbro does not publicly report on sales per released set, but we can use current pricing trends to show general interest and current value in sets and by years of release.
+This project explores current prices for Magic: The Gathering by gathering average card prices per card ID from retail providers like TCGPlayer, CardKingdom, and CardSphere. Hasbro does not publicly report on sales per released set, but we can use current pricing trends to show general interest and current value in sets and by years of release.  
 
-## Quick Notes
+To note, whenever multiple sources are tied to a single card, the notebook will average those market prices down to a price/index. Card condition is not considered specifically, just average price points. Foils and non-foils are listed as a single UUID, so those are averaged together.
+
+## Overview
 - MTG is the first modern, global trading card game (TCG) created, only now rivaled by Pokemon TCG.  
-- There are ~30k unique MTG cards and over 1M individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
+- There are ~30k unique MTG cards and over 1 million individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
 - There is an estimated 50 billion MTG cards printed since the games launch in 1993.  
-- Hasbro just announced its highest set sales in 2025 with Final Fantasy.
+- Hasbro just announced its highest set sales with Final Fantasy in 2025.
 
 ## How to Use
 1. Clone this repository.
@@ -20,7 +22,6 @@ As of August 26, 2025 - cards on average from MTG's release year, 1993, still ho
 - cards CSV file
     * main data source
     * provided by mtgjson.com
-
 - cardPrices CSV file
     * secondary data pricing source
     * provided by mtgjson.com
@@ -33,4 +34,4 @@ As of August 26, 2025 - cards on average from MTG's release year, 1993, still ho
 
 
 ## Author
-Curtis Schneider – Code:You Capstone Project
+Curtis Schneider
