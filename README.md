@@ -14,7 +14,7 @@ This project explores current prices for Magic: The Gathering by gathering avera
 3. Open `mtgAnalysis.ipynb` in Jupyter Notebook or JupyterLab.
 
 ## Example Output
-As of August 26, 20205 - cards on average from MTG's release year, 1993, still hold the most value by over 6 times the next popular year, 2022, mostly due to the 30th anniversary set.
+As of August 26, 2025 - cards on average from MTG's release year, 1993, still hold the most value by over 6 times the next popular year, 2022.
 
 ## Data Sources
 - cards CSV file
