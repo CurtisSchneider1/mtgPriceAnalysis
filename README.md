@@ -2,9 +2,11 @@
 
 
 ## Magic: The Gathering Price Data Analysis
-This project explores current prices for Magic: The Gathering by gathering average card prices per card ID from retail providers like Cardhoarder, CardKingdom, Cardmarket, Cardsphere, and TCGPlayer. Hasbro does not publicly report on sales per released set, but we can use current pricing trends to show general interest and current value in sets and by years of release.  
+This project explores current prices for Magic: The Gathering by gathering average card prices per card ID from retail providers like Cardhoarder, CardKingdom, Cardmarket, Cardsphere, and TCGPlayer. Hasbro does not sell single cards as product. They sell boxes, decks, boosters, and more. Hasbro also does not publicly report on sales per released set. So to determine card value, we can use current, secondary market price trends to see how consumers are spending their money on singles, by set, by release year, and across the game as a whole.  
 
 To note, whenever multiple price providers are tied to a single card, the notebook will average those market prices per card (per cardFinish per UUID). Card condition or card grade are not considered specifically, just market price. Foils and non-foils, even if sharing a UUID, are considered and priced separately.
+
+"Market Price" is determined by sold value and not by listed/offer value.
 
 ## MTG Overview
 - MTG is the first modern, global trading card game (TCG) created, only now rivaled by Pokemon TCG.  
@@ -21,19 +23,23 @@ To note, whenever multiple price providers are tied to a single card, the notebo
 2. Install the required Python packages:  
    pip install -r requirements.txt
 3. Run all notebooks in VS Code, Jupyter Notebook, JupyterLab.
+Run in this order: ...
+
 
 ### Example Output
 As of August 26, 2025 - cards on average from MTG's release year, 1993, still hold the most value by over 6 times the next popular year, 2022.
 
+What are the set trends that equal value? What sets, years, and card types hold the most value?
+
 ### Data Sources
 Magic: The Gathering
-- cards CSV file
+- cardsMagic CSV file
     * main data source
     * provided by mtgjson.com
-- cardPrices CSV file
+- pricesMagic CSV file
     * market data pricing source
     * provided by mtgjson.com
-- setDetails CSV file
+- setsMagic CSV file
     * showing set names, set codes, and release dates
     * sourced from mtgdecks.net/prices
 - setValueSorted CSV file
@@ -51,7 +57,7 @@ Pokemon
 - Stack Overflow was used as a learning tool and debugging.
 - Python Documentation was used for syntax of some modules and methods.
 - Matplotlib.org was used for plotting syntax.
-- ChatGPT was used to used as a learning tool and for troubleshooting/debugging.
+- ChatGPT was used for troubleshooting/debugging.
 
 ### Author
 Curtis Schneider
