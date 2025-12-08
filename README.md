@@ -1,35 +1,42 @@
-# Collectible Card Game Price Data Analysis
+# Card Data Analysis - Magic: The Gathering 
 
-
-## Magic: The Gathering Price Data Analysis
-This project explores current prices for Magic: The Gathering by gathering average card prices per card ID from retail providers like Cardhoarder, CardKingdom, Cardmarket, Cardsphere, and TCGPlayer. Hasbro does not sell single cards as product. They sell boxes, decks, boosters, and more. Hasbro also does not publicly report on sales per released set. So to determine card value, we can use current, secondary market price trends to see how consumers are spending their money on singles, by set, by release year, and across the game as a whole.  
-
-To note, whenever multiple price providers are tied to a single card, the notebook will average those market prices per card (per cardFinish per UUID). Card condition or card grade are not considered specifically, just market price. Foils and non-foils, even if sharing a UUID, are considered and priced separately.
-
-"Market Price" is determined by sold value and not by listed/offer value.
+## Project Overview  
+This project explores Magic: The Gathering (MTG) card data from secondary sales providers like Cardhoarder, CardKingdom, Cardsphere, and TCGPlayer. The goal is to provide insights on how consumers value cards through visualizations and queries.
 
 ## MTG Overview
-- MTG is the first modern, global trading card game (TCG) created, only now rivaled by Pokemon TCG.  
+- MTG is the first modern, global trading card game (TCG) created, only rivaled by Pokemon TCG.  
 - There are ~30k unique MTG cards and over 1 million individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
 - There is an estimated 50 billion MTG cards printed since the games launch in 1993.  
-- Hasbro just announced its highest set sales with Final Fantasy in 2025.
+- Hasbro announced its highest set sales with Final Fantasy in 2025.
 
-## Pokemon Notes
-- Pricing data is not granular enough to consider card condition or grading. Values are general TCG market prices.
-- Only english card versions
+## Project Background
+Hasbro does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for individual card value, we must look at the secondary market.
 
 ### How to Use
 1. Clone this repository.
 2. Install the required Python packages:  
    pip install -r requirements.txt
-3. Run all notebooks in VS Code, Jupyter Notebook, JupyterLab.
-Run in this order: ...
+3. Run notebooks in VS Code, Jupyter Notebook, or JupyterLab in this order:
+    * wranglingMagic.ipynb
+    * wranglingPokemon.ipynb
+    * sql.ipynb
+    * visualization.ipynb
+4. Then run the following notebooks to use the following functions:    
+    * functionBestValue.ipynb
+    * functionCarValue.ipynb
 
+### Features
+This project makes it easy to:
+* See which cards, sets, types, rarities, and release years hold the most consumer value.
+* Determine how to get the best value when purchasing singles.
+* Visualize secondary market card value compared to Pokemon.
+* Run SQLite queries to uncover additional insights.
 
-### Example Output
-As of August 26, 2025 - cards on average from MTG's release year, 1993, still hold the most value by over 6 times the next popular year, 2022.
-
-What are the set trends that equal value? What sets, years, and card types hold the most value?
+## To Note
+* "Market Price" is determined by sold value and not by listed/offer value.
+* Whenever multiple price providers are tied to a single card, the average of those market prices per card will be used. 
+* Card condition or card grade are not considered specifically, just market price. 
+* Foils and non-foils, even if sharing a UUID, are considered and priced separately.
 
 ### Data Sources
 Magic: The Gathering
@@ -54,10 +61,7 @@ Pokemon
     * provided by tcgcsv.com
 
 ### Acknowledgements
-- Stack Overflow was used as a learning tool and debugging.
-- Python Documentation was used for syntax of some modules and methods.
-- Matplotlib.org was used for plotting syntax.
-- ChatGPT was used for troubleshooting/debugging.
+- ChatGPT was used for troubleshooting and debugging.
 
 ### Author
 Curtis Schneider

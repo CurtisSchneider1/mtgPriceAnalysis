@@ -1,3 +1,6 @@
 gitignore/
 *.db
 *.pkl
+cleanMagicIndPrices.csv
+cleanMagic.csv
+cleanPokemon.csv
