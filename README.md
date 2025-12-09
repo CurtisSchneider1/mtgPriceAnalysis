@@ -21,7 +21,7 @@ Hasbro does not sell single cards but instead sells sealed decks, boosters packs
 3. Run notebooks in VS Code, Jupyter Notebook, or JupyterLab in this order:
     * wranglingMagic.ipynb
     * wranglingPokemon.ipynb
-    * sql.ipynb
+    * queries.ipynb
     * visualization.ipynb
 4. Then run the following notebooks to use the following functions as needed:    
     * functionBestValue.ipynb
@@ -31,7 +31,7 @@ Hasbro does not sell single cards but instead sells sealed decks, boosters packs
 This project makes it easy to:
 * See which cards, sets, types, rarities, and release years hold the most consumer value.
 * Determine how to get the best value when purchasing singles.
-* Visualize secondary market card value compared to Pokemon.
+* Visualize secondary MTG market value compared to Pokemon.
 * Run sqlite3 queries to uncover additional insights as desired.
 
 ## To Note
