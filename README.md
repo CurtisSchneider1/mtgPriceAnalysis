@@ -6,10 +6,10 @@ This project explores Magic: The Gathering (MTG) card data from secondary sales 
 Source data last updated: December 9, 2025
 
 ## MTG Overview
-- MTG is the first modern, global trading card game (TCG) created, only recently rivaled by Pokemon TCG.  
-- There are ~30k unique MTG cards and over 1 million individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
-- There is an estimated 50 billion MTG cards printed since the games launch in 1993.  
-- Hasbro announced its highest set sales with Final Fantasy in 2025.
+* MTG is the first modern, global trading card game (TCG) created, only recently rivaled by Pokemon TCG.  
+* There are ~30k unique MTG cards and over 1 million individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
+* There is an estimated 50 billion MTG cards printed since the games launch in 1993.  
+* Hasbro announced its highest set sales with Final Fantasy in 2025.
 
 ## Project Background
 Hasbro does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for sets or individual card value, we must look at the secondary market.
@@ -39,6 +39,8 @@ This project makes it easy to:
 * Whenever multiple price providers are tied to a single card, the average of those market prices per card will be used. 
 * Card condition or card grade are not considered specifically, just overall market price. 
 * Foils and non-foils, even if sharing a UUID, are considered and priced separately.
+* A small percentage of cards (less than 2%) may have no value or NaN due to the price provider(s) having no market price for those cards.
+    - Each provider has their own metrics for not providing a current market price possibly due to no recent sales, incredibly rare cards, banned card, etc.
 
 ## Data Sources
 Magic: The Gathering
