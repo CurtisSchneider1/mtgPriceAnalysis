@@ -1,18 +1,18 @@
 # Card Data Analysis - Magic: The Gathering 
 
 ## Project Overview  
-This project explores Magic: The Gathering (MTG) card data from secondary sales providers like Cardhoarder, CardKingdom, Cardsphere, and TCGPlayer. The goal is to provide insights on how consumers value cards through visualizations and queries.
+This project explores Magic: The Gathering (MTG) card data from secondary sales providers like Cardhoarder, CardKingdom, Cardsphere, and TCGPlayer. The goal is to provide insights on how consumers value cards through pandas, visualizations, and queries.
 
 ## MTG Overview
-- MTG is the first modern, global trading card game (TCG) created, only rivaled by Pokemon TCG.  
+- MTG is the first modern, global trading card game (TCG) created, only recently rivaled by Pokemon TCG.  
 - There are ~30k unique MTG cards and over 1 million individual cards when considering reprints, alt arts, languages, promos, foils, etc.  
 - There is an estimated 50 billion MTG cards printed since the games launch in 1993.  
 - Hasbro announced its highest set sales with Final Fantasy in 2025.
 
 ## Project Background
-Hasbro does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for individual card value, we must look at the secondary market.
+Hasbro does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for sets or individual card value, we must look at the secondary market.
 
-### How to Use
+## How to Use
 1. Clone this repository.
 2. Install the required Python packages:  
    pip install -r requirements.txt
@@ -21,24 +21,24 @@ Hasbro does not sell single cards but instead sells sealed decks, boosters packs
     * wranglingPokemon.ipynb
     * sql.ipynb
     * visualization.ipynb
-4. Then run the following notebooks to use the following functions:    
+4. Then run the following notebooks to use the following functions as needed:    
     * functionBestValue.ipynb
     * functionCarValue.ipynb
 
-### Features
+## Features
 This project makes it easy to:
 * See which cards, sets, types, rarities, and release years hold the most consumer value.
 * Determine how to get the best value when purchasing singles.
 * Visualize secondary market card value compared to Pokemon.
-* Run SQLite queries to uncover additional insights.
+* Run SQLite3 queries to uncover additional insights as desired.
 
 ## To Note
 * "Market Price" is determined by sold value and not by listed/offer value.
 * Whenever multiple price providers are tied to a single card, the average of those market prices per card will be used. 
-* Card condition or card grade are not considered specifically, just market price. 
+* Card condition or card grade are not considered specifically, just overall market price. 
 * Foils and non-foils, even if sharing a UUID, are considered and priced separately.
 
-### Data Sources
+## Data Sources
 Magic: The Gathering
 - cardsMagic CSV file
     * main data source
@@ -60,8 +60,8 @@ Pokemon
     * showing set names, set codes, and release dates
     * provided by tcgcsv.com
 
-### Acknowledgements
+## Acknowledgements
 - ChatGPT was used for troubleshooting and debugging.
 
-### Author
+## Author
 Curtis Schneider
