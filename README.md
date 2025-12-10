@@ -1,7 +1,13 @@
 # Card Data Analysis - Magic: The Gathering 
 
+<img src='images/magic.png'>
+
 ## Project Overview  
-This project explores Magic: The Gathering (MTG) card data from secondary sales providers like Cardhoarder, CardKingdom, Cardsphere, and TCGPlayer. The goal is to provide insights on how consumers value cards through pandas, visualizations, and queries.
+This project explores Magic: The Gathering (MTG) card data from secondary sales providers like CardKingdom, Cardsphere, Mana Pool, and TCGPlayer. 
+
+The project goals are to: 
+* Provide insights on how consumers value cards through pandas, visualizations, and queries.
+* Give tools to consumers not readily available elsewhere.  
 
 Source data last updated: December 9, 2025
 
@@ -12,7 +18,7 @@ Source data last updated: December 9, 2025
 * Hasbro announced its highest set sales with Final Fantasy in 2025.
 
 ## Project Background
-Hasbro does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for sets or individual card value, we must look at the secondary market.
+Hasbro, parent company of Wizards of the Coast, does not sell single cards but instead sells sealed decks, boosters packs, and similar product. Hasbro also does not publicly report granular sales numbers per released set. Since there is then no official source for sets or individual card value, we must look at the secondary market.
 
 ## How to Use
 1. Clone this repository.
@@ -39,8 +45,12 @@ This project makes it easy to:
 * Whenever multiple price providers are tied to a single card, the average of those market prices per card will be used. 
 * Card condition or card grade are not considered specifically, just overall market price. 
 * Foils and non-foils, even if sharing a UUID, are considered and priced separately.
-* A small percentage of cards (less than 2%) may have no value or NaN due to the price provider(s) having no market price for those cards.
-    - Each provider has their own metrics for not providing a current market price possibly due to a lack of sales, exceptionally rare cards, banned cards, etc.
+* A small percentage of cards (less than 1%) may have no value or NaN in price-related columns due to the price provider(s) having no market price for those cards.
+    - Each provider has their own metrics for not providing a current market price possibly due to: 
+        * a lack of sales.
+        * exceptionally rare cards.
+        * banned cards.
+        * announced cards that are not yet on sale.
 
 ## Data Sources
 Magic: The Gathering
