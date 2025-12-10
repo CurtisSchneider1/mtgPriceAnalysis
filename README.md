@@ -40,7 +40,7 @@ This project makes it easy to:
 * Card condition or card grade are not considered specifically, just overall market price. 
 * Foils and non-foils, even if sharing a UUID, are considered and priced separately.
 * A small percentage of cards (less than 2%) may have no value or NaN due to the price provider(s) having no market price for those cards.
-    - Each provider has their own metrics for not providing a current market price possibly due to no recent sales, incredibly rare cards, banned card, etc.
+    - Each provider has their own metrics for not providing a current market price possibly due to a lack of sales, exceptionally rare cards, banned cards, etc.
 
 ## Data Sources
 Magic: The Gathering
