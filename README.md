@@ -36,7 +36,7 @@ Hasbro, parent company of Wizards of the Coast, does not sell single cards but i
 ## Features
 This project makes it easy to:
 * See which cards, sets, types, rarities, and release years hold the most consumer value.
-* Determine how to get the best value when purchasing singles.
+* Determine how to get the best value when purchasing singles across multiple eCommerce websites.
 * Visualize secondary MTG market value compared to Pokemon.
 * Run sqlite3 queries to uncover additional insights as desired.
 
@@ -47,10 +47,10 @@ This project makes it easy to:
 * Foils and non-foils, even if sharing a UUID, are considered and priced separately.
 * A small percentage of cards (less than 1%) may have no value or NaN in price-related columns due to the price provider(s) having no market price for those cards.
     - Each provider has their own metrics for not providing a current market price possibly due to: 
-        * a lack of sales.
-        * exceptionally rare cards.
-        * banned cards.
-        * announced cards that are not yet on sale.
+        * A lack of sales.
+        * Exceptionally rare cards.
+        * Banned cards.
+        * Announced cards that are not yet on sale.
 
 ## Data Sources
 Magic: The Gathering
