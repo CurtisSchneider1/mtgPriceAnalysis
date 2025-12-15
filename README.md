@@ -34,7 +34,7 @@ Hasbro, parent company of Wizards of the Coast, does not sell single cards but i
     * functionCardSearch.ipynb
     * functionCardSearchAdvanced.py**
 
-*This project was developed in VS Code and not specifically tested to work in other IDEs.
+*This project was developed in VS Code and not specifically tested in other IDEs.
 **Function WILL NOT work in Jupyter Notebook or JupyterLab (autocomplete is not supported).
 
 ## Features
