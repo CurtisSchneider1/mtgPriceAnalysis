@@ -24,14 +24,18 @@ Hasbro, parent company of Wizards of the Coast, does not sell single cards but i
 1. Clone this repository.
 2. Install the required Python packages:  
    pip install -r requirements.txt
-3. Run notebooks in VS Code, Jupyter Notebook, or JupyterLab in this order:
+3. Run notebooks in VS Code*, Jupyter Notebook, or JupyterLab in this order:
     * wranglingMagic.ipynb
     * wranglingPokemon.ipynb
     * queries.ipynb
-    * visualization.ipynb
+    * visualizations.ipynb
 4. Then run the following notebooks to use the following functions as needed:    
     * functionBestValue.ipynb
-    * functionCardValue.ipynb
+    * functionCardSearch.ipynb
+    * functionCardSearchAdvanced.py**
+
+*This project was developed in VS Code and not specifically tested to work in other IDEs.
+**Function WILL NOT work in Jupyter Notebook or JupyterLab (autocomplete is not supported).
 
 ## Features
 This project makes it easy to:
