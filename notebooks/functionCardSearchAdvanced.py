@@ -11,7 +11,7 @@ import readline
 # Ensure no output wrapping.
 pd.set_option("display.expand_frame_repr", False)
 
-# Display all in output.
+# Display all rows in output.
 pd.set_option('display.max_rows', None)
 
 # Use path relative to the script and not active directory.
@@ -34,14 +34,14 @@ def autocomplete(options):
 
 def cardValue():
     """ 
-    Card search function for dfm3 price comparison between price providers.
+    Search dfm3 for all instances of an individual card.
     Press TAB to autocomplete card name input.
 
     Args:
         str: User inputted card name.
 
     Returns:
-        values: Each instance of the inputted card based on UUID, pricing information, and average market price.
+        values: Card and price information when card name matches input.
     """
     
     cardList = sorted(dfm3["name"].unique())
