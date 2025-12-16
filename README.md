@@ -26,14 +26,14 @@ Hasbro, parent company of Wizards of the Coast, does not sell single cards but i
 2. Install the required Python packages:  
    pip install -r requirements.txt
 3. Run notebooks in VS Code*, Jupyter Notebook, or JupyterLab in this order:
-    * wranglingMagic.ipynb
-    * wranglingPokemon.ipynb
-    * queries.ipynb
-    * visualizations.ipynb
+    - wranglingMagic.ipynb
+    - wranglingPokemon.ipynb
+    - queries.ipynb
+    - visualizations.ipynb
 4. Then run the following notebooks to use the following functions as needed:    
-    * functionBestValue.ipynb
-    * functionCardSearch.ipynb
-    * functionCardSearchAdvanced.py**
+    - functionBestValue.ipynb
+    - functionCardSearch.ipynb
+    - functionCardSearchAdvanced.py**
 
 *This project was developed in VS Code and not specifically tested in other IDEs.  
 **Function WILL NOT work in Jupyter Notebook or JupyterLab (autocomplete is not supported).
@@ -59,26 +59,26 @@ This project makes it easy to:
 
 ## Data Sources
 Magic: The Gathering
-- cardsMagic CSV file
-    * card details data source
-    * provided by [MTGJSON](https://mtgjson.com)
-- pricesMagic CSV file
-    * market data pricing source
-    * provided by [MTGJSON](https://mtgjson.com)
-- setsMagic CSV file
-    * showing set names, set codes, and release dates
-    * sourced from [MTG Decks](https://mtgdecks.net/prices)
+* cardsMagic CSV file
+    - card details data source
+    - provided by [MTGJSON](https://mtgjson.com)
+* pricesMagic CSV file
+    - market data pricing source
+    - provided by [MTGJSON](https://mtgjson.com)
+* setsMagic CSV file
+    - showing set names, set codes, and release dates
+    - sourced from [MTG Decks](https://mtgdecks.net/prices)
 
 Pokemon
-- cardsPokemon XLSX file
-    * card details and market data from TCGPlayer's API
-    * provided by [TCGCSV](https://tcgcsv.com/)
-- pokemonGroups CSV file
-    * set names, set codes, and release dates
-    * provided by [TCGCSV](https://tcgcsv.com/)
+* cardsPokemon XLSX file
+    - card details and market data from TCGPlayer's API
+    - provided by [TCGCSV](https://tcgcsv.com/)
+* pokemonGroups CSV file
+    - set names, set codes, and release dates
+    - provided by [TCGCSV](https://tcgcsv.com/)
 
 ## Acknowledgements
-- ChatGPT was used for troubleshooting and debugging.
+* ChatGPT was used for troubleshooting and debugging.
 
 ## Author
 Curtis Schneider
