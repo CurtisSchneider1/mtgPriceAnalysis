@@ -6,7 +6,12 @@
 
 from pathlib import Path
 import pandas as pd
-import readline
+# readline is Linux/macOS.
+# pyreadline3 is Windows.
+try:
+    import readline
+except ImportError:
+    import pyreadline3 as readline
 
 # Ensure no output wrapping.
 pd.set_option("display.expand_frame_repr", False)
